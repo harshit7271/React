@@ -10,3 +10,6 @@ function App() {
 }
 
 export default App;
+
+
+// observation : we should define the compoment with capital letter otherwise it will not work.
