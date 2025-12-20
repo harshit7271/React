@@ -21,19 +21,22 @@ const ReactElement = {
 }
 */
 
-/*
-const anotherElement = (
-    <a href="https://www.google.com" target='_blank'>Click here to visit Google</a>
-)
-*/
 
-/*
+const anotherElement = (
+    <a href="https://www.google.com" target='_blank'> Click here to visit Google</a>
+)
+
+
+const anotherGudii = " and Garima is learning React very fast"
+
 const reactElement = React.createElement(
     'a',
     {href: 'https://google.com', target: '_blank'},
-    'Click here to visit Google'
+    'Click here to visit Google',
+    anotherGudii,
+    anotherElement
 )
-*/
+
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <App />
+    reactElement
 )
