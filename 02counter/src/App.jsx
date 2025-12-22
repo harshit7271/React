@@ -6,11 +6,19 @@ import './App.css'
 
 function App() {
 
+  let counter = 5
+  
+  const addValue = () => {
+    console.log("Value Added", Math.random());
+}
   return (
     <>
       <h1>Garima aur Mai</h1>
-      <h2>Counter Value : 5</h2>
-      <button>Add Value</button>
+      <h2>Counter Value : {counter}</h2>
+      <button
+      onClick ={addValue}
+      >Add Value</button>
+      <br />
       <button>Remove Value</button>
     </>
   )
