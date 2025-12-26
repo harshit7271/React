@@ -8,7 +8,7 @@ import './App.css'
 
 function App() {
   
-  let [counter, gudiiCounter]= useState(15)          // 2. useState returns an array with two elements: the current state value and a function to update it.
+  let [counter, gudiiCounter]= useState(15)          // 2. useState returns an array with two elements: the current state value and a function to update it./ also use const in place of let
 
   // let counter = 15
   
