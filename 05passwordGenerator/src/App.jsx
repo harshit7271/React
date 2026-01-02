@@ -24,7 +24,8 @@ function App() {
  
     useEffect(() => {
       generatePassword()
-    }, [length, numberAllowed, charAllowed, generatePassword])
+    }, [length, numberAllowed, charAllowed, generatePassword])   //useEffect: Runs side effects (like generating password)
+    // No button needed! Length slider moves → new password. Checkbox clicked → new password. Live preview as user adjusts settings.
 
     return (
     <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-4 my-8 bg-gray-800 text-orange-500">
@@ -55,7 +56,7 @@ function App() {
       </div>
       <div className = "flex-center gap-x-1">
         <input
-        type = "checkbox"
+        type = "checkbox" 
         defaultChecked={numberAllowed}
         id="numberInput"
         onChange={() => {
