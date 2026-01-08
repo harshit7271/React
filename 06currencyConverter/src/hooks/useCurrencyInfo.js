@@ -13,4 +13,4 @@ function useCurrencyInfo(currency){
     return data
 }           // with useEffect fetch will be called automatically
 
-export default useCurrencyInfo
+export default useCurrencyInfo;
