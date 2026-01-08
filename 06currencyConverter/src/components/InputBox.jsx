@@ -28,7 +28,7 @@ function InputBox({
                     disabled = {amountDisable}
                     value = {amount}
                     onChange = {(e) => onAmountChange && 
-                        onAmountChange(e.target.value)}
+                        onAmountChange(Number(e.target.value))}
 
                 />
             </div>
@@ -36,17 +36,24 @@ function InputBox({
                 <p className="text-black/40 mb-2 w-full">Currency Type</p>
                 <select
                     className="rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none"
+                    value = {selectCurrency}
+                    onChange = {(e) => onCurrencyChange && 
+                        onCurrencyChange(e.target.value)}
+                        disabled = {currencyDisable}
                     
                 >
                     
-                        <option value="usd">
+                       {currencyOptions.map((currency) => 
+                        (
+                            <option key = {} value = "usd">
                             usd
-                        </option>
+                            </option>
+                        ))}  
                 
-                </select>
+                </select>  
             </div>
         </div>
     );
-}
+}                                                            // remember the keys in loops in react
 
 export default InputBox;
